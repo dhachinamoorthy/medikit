@@ -1,0 +1,343 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+    </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      background: linear-gradient(90deg,#36d1dc 0%,#5b86e5);
+    }
+    .row{ float: right;
+   width: 25.00%;
+   height: 25.00%;
+   padding: 5px;
+   } 
+   button {
+    background-color: rgb(230, 89, 89);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .header {
+      padding: 1px;
+      text-align: center;
+      font-size: 2.1rem;
+      letter-spacing: 0.5rem;
+      line-height: 1.4;
+      background: rgb(231, 90, 90);
+      color: rgb(255, 255, 255);
+    }
+    
+    .header h1 {
+      font-size: 40px;
+    }
+  img{
+    width: 75px;
+    height: 500px;
+  }
+
+    .content{
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 2.1rem;
+      letter-spacing: 0.5rem;
+      line-height: 1.4;
+    }
+  @media screen and (max-width: 2000px) {
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .topnav input[type=text]{float: none;
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;}
+  .footer {
+  position: fixed;
+  left: auto;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(231, 90, 90);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.footer,
+.push {
+  position: absolute;
+  height: 50px;
+}
+
+    </style>
+</head>
+    <body>
+      
+      <div class="header">
+      <h1>MEDIKIT</h1>
+      <P>ALL YOUR MEDICAL EQUIPMENTS & MEDICINES IN ONE PLACE</P><br>
+      <div class="topnav">
+        <a class="active" href="#home">HOME</a>
+        <a href="#men">PATIENT</a>
+        <a href="#women">DOCTOR</a>
+        <a href="login.php">  LOGOUT</a>
+        <a href="feedback.html">FEEDBACK</a>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button onclick="myFunction()">Today offer</button>
+        </div><p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "50% off on Medicines";
+}
+</script>
+      </div></div>
+ <section>
+  <img class="mySlides" src="https://www.afd.fr/sites/afd/files/styles/visuel_principal/public/2019-10-09-27-46/flickr-marco-verch.jpg?itok=XH4x7-Y4" style="width:100%">
+  <img class="mySlides" src="https://lirp.cdn-website.com/69c0b277/dms3rep/multi/opt/Covid-19+vaccination+registration+%28Co-WIN%29-640w.jpg" style="width:100%">
+  <img class="mySlides" src="https://mobisoftinfotech.com/resources/wp-content/uploads/2018/07/Banner-1.png" style="width:100%">
+</section>
+<script>
+  var myIndex = 0;
+carousel()
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++){
+    x[i].style.display = "none";
+  } 
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}  
+</script>
+    <div class="content">
+      <h1>EVERYTHING YOU NEED</h1>
+    </div>
+  </div>
+      <br>
+      <br>
+       <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/diabetes/1296x728_What_to_Expect_When_Changing_Your_Insulin_Treatment.jpg?w=1155&h=1528" alt="1" style="width:100%"> 
+            <div class="caption">
+              <h3>INSULIN</h3>
+              <form action="rate.php" method="post">
+              <input name="product" value="INSULIN" readonly hidden>
+              <input name="rate" value="500" readonly hidden>
+              <h4>Sugar Insulin</h4>
+              <h4>Rs.500</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div> 
+          </div>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://5.imimg.com/data5/HW/WL/RR/ANDROID-25957024/product-jpeg-500x500.jpg" alt="1" style="width:100%"> 
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>GLUCOSE MONITOR</h3>
+              <input name="product" value="Gluco Meter" readonly hidden>
+              <input name="rate" value="800" readonly hidden>
+              <h4>Gluco Meter Kit</h4>
+              <h4>Rs.800</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://st.depositphotos.com/2123111/4569/i/600/depositphotos_45692275-stock-photo-infusion-bottle-with-iv-solution.jpg" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>GLUCOSE</h3>
+            <input name="product" value="Glucose Bottle" readonly hidden>
+            <input name="rate" value="1500" readonly hidden>
+            <h4>Glucose Bottle</h4>
+              <h4>Rs.1500</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://5.imimg.com/data5/DP/WR/MY-45532566/stethoscope-500x500.jpg" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>STETHOSCOPE</h3>
+            <input name="product" value="Stethoscope" readonly hidden>
+            <input name="rate" value="5999" readonly hidden>
+            <h4>Stethoscope</h4>
+              <h4>Rs.5999</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://c.ndtvimg.com/2021-06/vgdaudqs_vaccine-generic-reuters_625x300_01_June_21.jpg" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>COVAXIN</h3>
+              <input name="product" value="Covid-19 vaccination" readonly hidden>
+              <input name="rate" value="1999" readonly hidden>
+              <h4>Covid-19 vaccination</h4>
+              <h4>Rs.1999</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kr9jafk0/bp-monitor/4/l/d/apparatus-mercurial-deluxe-diamond-original-imag53nmpjwzf6r3.jpeg?q=70" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>OMRON</h3>
+              <input name="product" value="Bp Monitor" readonly hidden>
+              <input name="rate" value="6545" readonly hidden>
+              <h4>Bp Monitor</h4>
+              <h4>Rs.6545</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div><div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://5.imimg.com/data5/BG/DV/FH/SELLER-4264045/clinical-digital-thermometer-500x500.jpg" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>THERMOMETER</h3>
+              <input name="product" value="Digital Thermometer" readonly hidden>
+              <input name="rate" value="2459" readonly hidden>
+              <h4>Digital Thermometer</h4>
+              <h4>Rs.2459</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.practostatic.com/practopedia-images/v3/res-750/dolo-650mg-tablet-cold-cough-covid-essentials-15-s_6fbd3435-bffd-428d-9288-ec74ad6a94ef.JPG" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+              <h3>DOLO 650</h3>
+              <input name="product" value="Dolo 650" readonly hidden>
+              <input name="rate" value="259" readonly hidden>
+              <h4>Dolo 650</h4>
+              <h4>Rs.259</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.practostatic.com/practopedia-images/v3/res-750/calpol-500mg-tablet-covid-essentials-15-s_d46c7374-2f79-45a8-987b-00c6efb3e71a.JPG" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+            <input name="product" value="Calpol 500" readonly hidden>
+            <input name="rate" value="298" readonly hidden> 
+              <h3>CALPOL 500</h3>
+              <h4>Calpol 500</h4>
+              <h4>Rs.298</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Iz1WxnW1Jeh_VwOzg5ltShSlcu-iUjRejw&usqp=CAU" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+            <input name="product" value="Surgical Knife" readonly hidden>
+            <input name="rate" value="3345" readonly hidden>
+              <h3>SURGICAL INSTRUMENTS</h3>
+              <h4>Surgical Knife</h4>
+              <h4>Rs.3345</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDtSAIBFt4q5sm-wgPYpnRqxLRpex9-ewJMA&usqp=CAU" alt="1" style="width:100%"> 
+            <div class="caption">
+            <form action="rate.php" method="post">
+            <input name="product" value="Surgical Mask(200)" readonly hidden>
+            <input name="rate" value="1099" readonly hidden>
+              <h3>Surgical Masks</h3>
+            <h4>Surgical Mask(200)</h4>
+            <h4>Rs.1099</h4>
+            <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="https://www.quill.com/content/index/resource-center/healthcare/buying-guides/exam-surgical-gloves/images/gloves-1205.jpg" alt="1" style="width:100%">
+            <div class="caption">
+            <form action="rate.php" method="post">
+            <input name="product" value="Surgical Glove(100)" readonly hidden>
+            <input name="rate" value="599" readonly hidden>
+              <h3>Surgical Glove</h3>
+              <h4>Surgical Glove(100)</h4>
+              <h4>Rs.599</h4>
+              <p><button class="btn btn-primary" role="button">buy now</button> <button class="btn btn-default" role="button">add to cart</button></p>
+            </form></div>
+          </div>
+        </div>
+  
+    </body>
+</html>
