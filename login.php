@@ -332,6 +332,6 @@ if (isset($_POST['sbtn'])){
         second.style.display="none"
         document.body.style.backgroundImage="url('https://i.pinimg.com/originals/70/15/06/70150665c0834368cd0293ec94a42372.jpg')"
     }
-
+<!-----csdcsdcs>
 </script>
 </html>
